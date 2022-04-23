@@ -1,12 +1,31 @@
+@keyframes transitionsIn{
+    from{
+
+        opacity: 0;
+        transform: rotateY(-100deg);
+
+    }
+
+    to{
+
+        opacity: 1;
+        transform: rotate(0);
+
+    }
+}
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #020202;
+    background-color: #5C677D;
 }
 .navn{
 
-    font-size: 5rem;
+    font-size: 5vw;
     text-align: center;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,7 +37,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    background-color: #305252;
+    background-color: #560BAD;
     padding-bottom: 3vh;
     align-items: center;
     align-content: center;
@@ -26,7 +45,7 @@ nav{
     text-align: center;
 }
 .con{
-    background-color: #04471C;
+    background-color: #002855;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -40,12 +59,21 @@ h1{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 1vh;
+    transition: all 0.2s ease;
+    animation: transitionsIn 750ms;
 
 }
+h1:hover{
+    transform: rotateZ(2deg);
+}
+h1:hover:nth-child(2n){
+    transform: rotateZ(-2deg);
+}
+
 p{
     font-size: 1.5vw;
     text-align: center;
-    color: #16DB65;
+    color: #979DAC;
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 20%;
     padding-left: 20%;
@@ -53,13 +81,15 @@ p{
     
 }
 .pgone{
-    font-size: 0rem;
-    transition: all 0.2s ease;
+    font-size: 1.1vw;
+    transition: all 0.3s ease;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    animation: transitionsIn 750ms;
 }
 .pgone:hover{
-    font-size: 1.1rem;
+    
+    transform: rotateZ(-3deg)
 }
 footer{
     width: 70%;
@@ -67,23 +97,31 @@ footer{
     margin-right: auto;
     padding-bottom: 2vh;
     padding-top: 2vh;
-    background-color: #0d281886;
+    background-color: #00285573;
     text-align: center;
 }
-
 a{
     font-size: 1.5vw;
     text-align: center;
-    color: #305252;
+    color: #7D8597;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.back{
+    font-size: 2vw;
+    color: #023d7d4d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 16vw;
+    transition: all 0.2s ease;
+}
+.back:hover{
+    color: #023E7D;
+}
+.link{
+    font-size: 1.2vw;
+    text-align: center;
+    color: #7D8597;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
-}
-.reveal{
-    background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    margin: 1rem;
 }
