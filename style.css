@@ -125,3 +125,18 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
 }
+.arrow {
+    border: solid #023E7D;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 16px;
+    transition: all 0.4s ease;
+    
+}
+.arrow:hover{
+    transform: rotate(495deg);
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
