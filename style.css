@@ -84,12 +84,15 @@ p{
     font-size: 1.1vw;
     transition: all 0.3s ease;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     animation: transitionsIn 750ms;
 }
 .pgone:hover{
-    
     transform: rotateZ(-3deg)
+    
+}
+.pgone:hover:nth-child(2n){
+    transform: rotateZ(3deg);
 }
 footer{
     width: 70%;
@@ -135,6 +138,9 @@ a{
 }
 .arrow:hover{
     transform: rotate(495deg);
+}
+.arrow:hover:nth-child(2n){
+    transform: rotate(-495deg);
 }
 .left {
     transform: rotate(135deg);
